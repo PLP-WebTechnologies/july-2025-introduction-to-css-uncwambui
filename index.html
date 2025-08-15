@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB DEVELOPMENT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Advanced HTML5 AND CSS</h1>
+    <p>This page demonstrates advanced HTML5 content including structured lists, tables, media, and a form with native validation.</p>
+    <P>It also introduces you to the foundational principles of CSS—how to style web content, 
+      apply essential styling properties, and understand the powerful concept of the CSS Box Model.</P>
+  </header>
+
+  <main>
+
+    <!-- Section: Course Overview (Lists) -->
+    <section>
+      <h2>Course Topics Covered</h2>
+      <ul>
+        <li>Semantic HTML5 Structure</li>
+        <li>Media Embedding (Images, Audio, Video)</li>
+        <li>HTML5 Forms and Input Types</li>
+        <li>Form Accessibility & Validation</li>
+        <li>CSS Basics and Box Model</li>
+        <li>CSS Selectors and Properties</li>
+      </ul>
+
+      <h3>Evaluation Process</h3>
+      <ol>
+        <li>Review course topics</li>
+        <li>Watch media examples</li>
+        <li>Fill out the feedback form</li>
+        <li>Submit for review</li>
+      </ol>
+    </section>
+
+    <!-- Section: Table of Assignments -->
+    <section>
+      <h2>Assignment Breakdown</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Assignment</th>
+            <th>Weight (%)</th>
+            <th>Due Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5 Structure</td>
+            <td>20%</td>
+            <td>AUG 10, 2025</td>
+          </tr>
+          <tr>
+            <td>Media Integration</td>
+            <td>15%</td>
+            <td>AUG 15, 2025</td>
+          </tr>
+          <tr>
+            <td>Form Design</td>
+            <td>25%</td>
+            <td>AUG 20, 2025</td>
+          </tr>
+          <tr>
+            <td>Final Project</td>
+            <td>40%</td>
+            <td>AUG 30, 2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section: Media Examples -->
+    <section>
+      <h2>Course Media Highlights</h2>
+
+      <h3>Sample Image</h3>
+      <img src="imgg.jpg" alt="Image" width="300" height="200">
+
+      <h3>Sample Audio</h3>
+      <audio controls>
+         <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">        
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Sample Video</h3>
+      <video width="400" height="240" controls>
+        <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Section: Feedback Form -->
+    <section>
+      <h2>Student Feedback Form</h2>
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="studentName">Full Name:</label><br>
+          <input type="text" id="studentName" name="studentName" required><br><br>
+
+          <label for="studentEmail">Email Address:</label><br>
+          <input type="email" id="studentEmail" name="studentEmail" required autocomplete="on"><br><br>
+
+          <label for="studentID">Student ID:</label><br>
+          <input type="text" id="studentID" name="studentID" required pattern="[A-Za-z0-9]{5,10}" title="5-10 alphanumeric characters"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Course Feedback</legend>
+
+          <label for="contentRating">Content Quality (1-10):</label><br>
+          <input type="range" id="contentRating" name="contentRating" min="1" max="10"><br><br>
+
+          <label for="comments">Additional Comments:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write your thoughts here..."></textarea><br><br>
+
+          <label for="recommend">Would you recommend this course?</label><br>
+          <select id="recommend" name="recommend" required>
+            <option value="">--Select--</option>
+            <option value="yes">Yes</option>
+            <option value="maybe">Maybe</option>
+            <option value="no">No</option>
+          </select><br><br>
+
+        </fieldset>
+
+        <input type="submit" value="Submit Evaluation">
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 UNC |  WEB DEVELOPMENT</p>
+  </footer>
+
+</body>
+</html>
